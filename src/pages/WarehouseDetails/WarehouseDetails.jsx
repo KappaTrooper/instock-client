@@ -42,6 +42,8 @@ export default function WarehouseDetails() {
     return <span>Loading...</span>;
   }
 
+  
+
   return (
     <div className="warehouse-details">
       <div className="warehouse-details__top">
