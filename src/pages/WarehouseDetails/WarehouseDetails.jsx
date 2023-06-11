@@ -8,7 +8,7 @@ import { apiUrl } from "../../utilities/api";
 import sortIcon from "../../assets/icons/sort-24px.svg";
 import axios from "axios";
 import arrowside from "../../assets/icons/chevron_right-24px.svg";
-export default function WarehouseDetails() {
+export default function WarehouseDetails({ warehouseList }) {
   const navigateTo = useNavigate();
 
   const [warehouseDetails, setWarehouseDetails] = useState();
@@ -25,7 +25,7 @@ export default function WarehouseDetails() {
       .catch((err) => {
         console.error(err);
       });
-  }, [id]);
+  }, [id, warehouseList]);
 
   useEffect(() => {
     axios
@@ -36,7 +36,7 @@ export default function WarehouseDetails() {
       .catch((err) => {
         console.error(err);
       });
-  }, [id]);
+  }, [id, warehouseList]);
 
   if (!warehouseDetails || !inventoryList) {
     return <span>Loading...</span>;

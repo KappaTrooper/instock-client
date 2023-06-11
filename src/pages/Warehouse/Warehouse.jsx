@@ -26,6 +26,7 @@ export default function Warehouse() {
         console.error(err);
       });
   }, [updatedItem]);
+
   if (!warehouseList) {
     return <span>Loading...</span>;
   }
