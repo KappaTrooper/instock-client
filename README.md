@@ -1,70 +1,55 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Instock Inventory Management System
 
-## Available Scripts
+Instock is a comprehensive warehouse management system designed to streamline inventory management processes for a Fortune 500 client. It offers a scalable and efficient solution for tracking warehouses, managing inventory items, and optimizing stock levels. The application consists of a modern React front-end communicating with a robust Express back-end, powered by MySQL as the database management system. The development process adhered to Agile methodologies, with project management facilitated by Jira and collaborative version control managed through Git and GitHub.
 
-In the project directory, you can run:
+### Project Overview
+The goal of the Instock project was to develop a time-sensitive inventory management system. The existing system for the client was not scalable and faced performance issues under heavy traffic loads. As a team, we built the InStock web application from scratch, following Agile principles. A Jira Scrum board was used to outline the required tasks, and effective communication and collaboration were crucial for successful project delivery.
 
-### `npm start`
+The application comprises a user-friendly front-end implemented using React.js, a powerful and scalable back-end built with Node.js and Express.js, and a MySQL database for efficient data storage and retrieval.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Screenshots
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Home page](https://i.imgur.com/67MmNKT.png)
+![Delete Warehouse](https://i.imgur.com/iOG2Gkl.png)
+![Warehouse List](https://i.imgur.com/sDv5kBW.png)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Features
 
-### `npm run eject`
+## Warehouse Management
+- View a list of warehouses, including their address, contact name, and contact information.
+- Add new warehouses to the system.
+- Edit existing warehouse details, such as the address or contact information.
+- Delete warehouses that are no longer needed.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Inventory Management
+- Each warehouse has its own list of inventory items.
+- Each inventory item is uniquely identified and categorized.
+- View the status of each inventory item (in stock or out of stock) and its quantity.
+- Add new inventory items to a specific warehouse.
+- Delete inventory items that are no longer in stock or needed.
+## Detailed Item View
+- Clicking on an inventory item provides a more detailed view.
+- The detailed view includes additional information, such as a description of the item.
+- Identify the specific warehouse to which the item belongs.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Tools and Resources
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The following tools and resources were utilized during the development of the Instock Inventory Management System:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Figma: 
 
-## Learn More
+- Git and GitHub: branching model, was followed, with main, develop, and feature branches utilized. Detailed commit messages were used to track progress and changes.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Jira: Used to organize tasks and track progress. A Jira Scrum board was set up with detailed tickets representing different features and functionality. The team planned, assigned, and managed the tasks using Jira.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Scrum Methodology: Agile principles, particularly Scrum methodology, were employed to drive the development process. Daily stand-up meetings were conducted to discuss progress, hurdles, and blockers, ensuring effective communication and collaboration.
 
-### Code Splitting
+- Additional Tools: Other tools and technologies used include create-react-app, react-router-dom, Knex (SQL query builder), BEM/SASS (CSS methodologies), npm (package manager), Postman (API testing), and browser development tools.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
